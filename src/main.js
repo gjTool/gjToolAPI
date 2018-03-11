@@ -13,13 +13,27 @@ new Vue({
     };
   },
   mounted: () => {
+  	var docEl = document.documentElement || document.body;
+		var clientWidth = docEl.clientWidth;
+		var clientHeight = docEl.clientHeight;
+		if(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+			console.log("移动端",clientWidth);
+			window.addEventListener("orientationchange", function(){
+				var docEl = document.documentElement || document.body;
+				var clientWidth = docEl.clientWidth;
+				console.log("旋转屏幕",clientWidth);
+				setTimeout(function () { }, 0);
+			})
+		} else {
+			console.log("pc端",clientWidth);
+		}
     const _this = this;
     var size = 1;
     var recalc = function () {
       var docEl = document.documentElement || document.body;
       var clientWidth = docEl.clientWidth;
 
-      if (!clientWidth) return;
+      if (!clientWidth || clientWidth<=1000) return;
       docEl.style.fontSize = 100 * (clientWidth / 1366) + 'px';
       size = clientWidth / 1366;
     };
