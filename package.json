@@ -1,7 +1,7 @@
 {
   "name": "gjtoolapi",
   "description": "A gjtoolAPI for gjtool.js project",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "GaoJin",
   "license": "MIT",
   "private": true,
