@@ -41,129 +41,131 @@ export default {
 #app {
   width: 100%;
   height: 100%;
-  _width: 1280px;
-  min-width: 1280px;
+  _width: 12.80rem;
+  min-width: 12.80rem;
 }
 .header {
   width: 100%;
-  height: 94px;
+  height: 0.94rem;
   text-align: center;
   background-color: #262727;
 }
 .header .text {
   position: absolute;
-  left: 30px;
-  top: 12px;
+  left: 0.30rem;
+  top: 0.12rem;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.14rem;
   font-style: oblique;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.015rem;
 }
 .header .title {
-  width: 280px;
+  width: 2.80rem;
   height: 100%;
   display: inline-block;
   position: relative;
 }
 .header p {
-  line-height: 250%;
   display: inline-block;
   color: #fff;
-  font-size: 34px;
+  font-size: 0.34rem;
   font-weight: 600;
+  position: relative;
+  top: -50%;
 }
 .header .version {
-  font-size: 12px;
+  font-size: 0.12rem;
   color: #fff;
   position: absolute;
-  bottom: 16px;
-  right: -38px;
+  bottom: 0.16rem;
+  right: -0.38rem;
   font-style: oblique;
 }
 .header .gjtool {
-  font-size: 16px;
+  font-size: 0.16rem;
   color: #fff;
   position: absolute;
-  bottom: 10px;
-  right: -380px;
+  bottom: 0.10rem;
+  right: -3.80rem;
   font-style: oblique;
 }
 .header .qq {
-  font-size: 14px;
-  padding: 0px 5px 3px 25px;
-  border-radius: 4px; 
+  font-size: 0.14rem;
+  padding: 0rem 0.05rem 0.03rem 0.25rem;
+  border-radius: 0.04rem; 
   color: #000;
   position: absolute;
-  bottom: 10px;
-  right: -280px;
-  background-size: 20px 20px;
+  bottom: 0.10rem;
+  right: -2.80rem;
+  background-size: 0.20rem 0.20rem;
 }
 .main {
   width: 100%;
-  height: calc( 100% - 94px);
+  height: calc( 100% - 0.94rem);
   position: relative;
 }
 
 .bar-left {
-  width: 140px;
+  width: 1.40rem;
   height: 100%;
   float: left;
 }
 .bar-left .nav {
   width: 100%;
   height: auto;
-   box-shadow: 8px 8px 8px #888; 
-  -webkit-box-shadow: 8px 8px 8px #888; 
-  -ms-box-shadow: 8px 8px 8px #888;  
-  -o-box-shadow: 8px 8px 8px #888;  
-  -moz-box-shadow: 8px 8px 8px #888; 
+   box-shadow: 0.08rem  0.08rem  0.08rem #888; 
+  -webkit-box-shadow:  0.08rem  0.08rem  0.08rem #888; 
+  -ms-box-shadow:  0.08rem  0.08rem  0.08rem #888;  
+  -o-box-shadow:  0.08rem  0.08rem  0.08rem #888;  
+  -moz-box-shadow:  0.08rem  0.08rem  0.08rem #888; 
 }
 .bar-left .nav .type {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 0.18rem;
   line-height: 190%;
-  padding-bottom: 5px; 
+  padding-bottom: 0.05rem; 
   cursor: pointer;
-  text-indent: 30px;
+  text-indent: 0.30rem;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
   text-shadow: 
-1px 1px 0 #ccc, 
-2px 2px 0 #ccc, /* end of 2 level deep grey shadow */ 
-3px 3px 0 #444, 
-4px 4px 0 #444, 
-5px 5px 0 #444, 
-6px 6px 0 #444; /* end of 4 level deep dark shadow */ 
+0.01rem 0.01rem 0 #ccc, 
+0.02rem 0.02rem 0 #ccc, /* end of 2 level deep grey shadow */ 
+0.03rem 0.03rem 0 #444, 
+0.04rem 0.04rem 0 #444, 
+0.05rem 0.05rem 0 #444, 
+0.06rem 0.06rem 0 #444; /* end of 4 level deep dark shadow */ 
 }
 .bar-left .nav .type:hover {
   color: #3879d9;
 }
 
 .container {
-  width: calc( 100% - 160px);
+  width: calc( 100% - 1.60rem);
   height: 100%;
-  /*max-width: 1200px;*/
-  /*max-height: 560px;*/
+  /*max-width: 1200rem;*/
+  /*max-height: 560rem;*/
   float: left;
-  margin-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
+  margin-left: 0.20rem;
+  padding-top: 0.20rem;
+  padding-right: 0.20rem;
   box-sizing: border-box;
   overflow-y: auto;
 }
 #backTop {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 0.50rem;
+  height: 0.50rem;
+  line-height: 0.50rem;
+  font-size: 0.16rem;
   text-align: center;
   border-radius: 50%;
   background: #ccc;
   position: absolute;
-  right: 50px;
-  bottom: 50px;
+  right: 0.50rem;
+  bottom: 0.50rem;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -179,17 +181,18 @@ export default {
 
 .sub-nav  {
   width: 100%;
-  height: 70px;
-  padding-top:4px; 
-  padding-left:10px; 
+  height: 0.70rem;
+  padding-top:0.04rem; 
+  padding-left:0.10rem; 
   box-sizing: border-box;
-  border-bottom: 2px solid #c33;
+  border-bottom: 0.02rem solid #c33;
 }
 .sub-nav li {
   float: left;
   line-height: 150%;
   cursor: pointer;
-  padding: 2px 6px 2px 6px;
+  padding: 0.02rem 0.06rem 0.02rem 0.06rem;
+  font-size: 0.16rem;
 }
 .sub-nav li:hover {
   color: #fff;
@@ -201,40 +204,45 @@ export default {
 }
 .type-con .content {
   width: 100%;
-  height: calc(100% - 80px);
-  padding: 20px;
+  height: calc(100% - 0.80rem);
+  padding: 0.20rem;
   background: #fff;
   box-sizing: border-box;
 }
-.type-con .content .introduce-text {
-	width: 720px;
-	height: 200px;
-	font-size:20px;
-	margin: 0 auto;
-	padding-top: 10px;
+ .introduce-text {
+	width: 7.20rem;
+	height: 2.00rem;
+	font-size:0.20rem;
+	margin: 1rem auto;
+	padding-top: 0.10rem;
 	box-sizing: content-box;
-	border:1px solid #ccc ;
-	box-shadow: 8px 8px 8px #888; 
-  -webkit-box-shadow: 8px 8px 8px #888; 
-  -ms-box-shadow: 8px 8px 8px #888;  
-  -o-box-shadow: 8px 8px 8px #888;  
-  -moz-box-shadow: 8px 8px 8px #888; 
+	border:0.01rem solid #ccc ;
+	box-shadow: 0.08rem 0.08rem 0.08rem #888; 
+  -webkit-box-shadow: 0.08rem 0.08rem 0.08rem #888; 
+  -ms-box-shadow: 0.08rem 0.08rem 0.08rem #888;  
+  -o-box-shadow: 0.08rem 0.08rem 0.08rem #888;  
+  -moz-box-shadow: 0.08rem 0.08rem 0.08rem #888; 
 }
-.type-con .content .introduce-text p {
-	margin-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+.introduce-text p {
+	margin-top: 0.20rem;
+	padding-left: 0.20rem;
+	padding-right: 0.20rem;
 }
-.type-con .content .introduce-text p:first-child {
-	text-indent: 40px;
-	margin-top: 10px;
+ .introduce-text p:first-child {
+	text-indent: 0.40rem;
+	margin-top: 0.10rem;
 }
 .type-con .content li {
-	margin-bottom: 20px;
-	border-bottom: 1px dashed #0087ff;
+	margin-bottom: 0.20rem;
+	border-bottom: 0.01rem dashed #0087ff;
 }
 .type-con .content li:last-child {
 	border-bottom: none;
 } 
-
+.type-con .content li .title {
+  font-size: 0.2rem;
+}
+.type-con .content li .content {
+  font-size: 0.16rem;
+}
 </style>

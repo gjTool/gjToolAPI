@@ -11,29 +11,7 @@ export default {
 }
 </script>
 <style>
- .introduce-text {
-	width: 720px;
-	height: 200px;
-	font-size:20px;
-	margin: 100px auto;
-	padding-top: 10px;
-	box-sizing: content-box;
-	border:1px solid #ccc ;
-	box-shadow: 8px 8px 8px #888; 
-  -webkit-box-shadow: 8px 8px 8px #888; 
-  -ms-box-shadow: 8px 8px 8px #888;  
-  -o-box-shadow: 8px 8px 8px #888;  
-  -moz-box-shadow: 8px 8px 8px #888; 
-}
- .introduce-text p {
-	margin-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
- .introduce-text p:first-child {
-	text-indent: 40px;
-	margin-top: 10px;
-}
+
 </style>
 
 
