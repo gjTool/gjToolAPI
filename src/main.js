@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Gj from 'gjtool/dist/gjtool.js';
+import Gj from 'gjtool';
 import router from "./router.js";
 
 new Vue({

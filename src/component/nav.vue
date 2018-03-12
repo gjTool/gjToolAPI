@@ -42,8 +42,6 @@
     </ul>
 </template>
 <script>
-import Gj from 'gjtool'
-
 export default {
   
 }
