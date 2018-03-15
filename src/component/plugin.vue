@@ -11,19 +11,19 @@
                     extend扩展插件。Gj.fn.protoType或者Gj.protoType上添加方法。</br>
                     示例：</br>
                     Gj.protoType.alert = function(a){</br>
-                        alert(a);</br>
+                       &nbsp;&nbsp;&nbsp;&nbsp; alert(a);</br>
                     }</br>
                     Gj.fn.protoType.alert = function(){</br>
-                        alert(Gj(this).val());</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert(Gj(this).val());</br>
                     }</br>
                     Gj.extend({</br>
-                        alert: function(){</br>
-                            alert(a);</br>
+                       &nbsp;&nbsp;&nbsp;&nbsp; alert: function(){</br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(a);</br>
                         }
                     })</br>
                     Gj.fn.extend({</br>
-                        alert : function(){</br>
-                        alert(Gj(this).val());</br>
+                       &nbsp;&nbsp;&nbsp;&nbsp; alert : function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Gj(this).val());</br>
                     }
                 </div>
             </li>
@@ -33,8 +33,8 @@
                     drag()，拖拽元素。nodrag(true)、nodrag()，元素关闭拖拽。nodrag(false)，元素开启拖拽。</br>
                     示例：</br>
                     Gj("#div").drag();//开启拖拽</br>
-                    Gj("#div").nodrag();//关闭拖拽</br>
-                    Gj("#div").nodrag(false);//开启拖拽</br>
+                    Gj("#div").nodrag();//禁止拖拽</br>
+                    Gj("#div").nodrag(false);//允许拖拽</br>
                 </div>
             </li>
         </ul>

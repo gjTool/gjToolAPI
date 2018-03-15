@@ -11,8 +11,13 @@
             <li>
                 <h3 class="title">文档加载完成</h3>
                 <div class="content">
-                    Gj(function(){});Gj(document).ready(fucntion(){});</br>
-                    两种方式都文档加载完成。在function内部写代码，就是代表文档加载完成后执行代码。
+                    Gj(function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    });</br>
+                    Gj(document).ready(fucntion(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    });</br>
+                    两种方式都是文档加载完成。在function内部写代码，就是代表文档加载完成后执行代码。
                 </div>
             </li>
             <li>
@@ -23,7 +28,9 @@
                     selector: 可选。字符串，选择器名，代表事件监听的元素，有这个参数代表开启事件监听。</br>
                     fn: 必需。函数，在内部写代码表示事件执行要做什么，fn有可选参数，经过封装的event事件对象，兼容ie浏览器。</br>
                     示例：</br>
-                    Gj("#div").on("click",function(e){});
+                    Gj("#div").on("click",function(e){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    });
                 </div>
             </li>
             <li>
@@ -42,7 +49,11 @@
                     fn1：必需。函数，鼠标划入事件，mouseenter。</br>
                     fn2：可选。函数，鼠标划出事件，mouseleave。</br>
                     示例：</br>
-                    Gj("#div").hover(function(){}, function(){});
+                    Gj("#div").hover(function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    }, function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    });
                 </div>
             </li>
             <li>
@@ -51,7 +62,9 @@
                     其他事件绑定。</br>
                     如："blur focus input focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu"</br>
                     示例：</br>
-                    Gj("#div").click(function(){});
+                    Gj("#div").click(function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    });
                 </div>
             </li>
         </ul>

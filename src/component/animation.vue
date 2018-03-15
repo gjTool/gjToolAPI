@@ -22,7 +22,7 @@
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
                     Gj(".container").animate({</br>
-                        scrollTop: 0</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;scrollTop: 0</br>
                     },1000,"easeIn");
                 </div>
             </li>

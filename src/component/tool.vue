@@ -27,42 +27,43 @@
             <li>
                 <h3 class="title">extend</h3>
                 <div class="content">
-                    extend(obj)，扩展插件。
+                    extend(obj)，扩展插件。</br>
                     示例：</br>
                     Gj.extend({</br>
-                        alert: function(){</br>
-                            alert(a);</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert: function(){</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(a);</br>
                         }
                     })</br>
                     Gj.fn.extend({</br>
-                        alert : function(){</br>
-                        alert(Gj('input').val());</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert : function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Gj('input').val());</br>
                     }
                 </div>
             </li>
             <li>
                 <h3 class="title">each</h3>
                 <div class="content">
-                    each(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。
+                    each(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。</br>
                     示例：</br>
                     Gj.each(arr, function(index, item){</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;//some code
                     );</br>
                 </div>
             </li>
             <li>
                 <h3 class="title">map</h3>
                 <div class="content">
-                    map(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。有返回值，将fn里return出来的数据塞到新数组里返回。
+                    map(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。有返回值，将fn里return出来的数据塞到新数组里返回。</br>
                     示例：</br>
                     var newArr = Gj.each(arr, function(index, item){</br>
-                        return index;</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return index;</br>
                     );</br>
                 </div>
             </li>
             <li>
                 <h3 class="title">now</h3>
                 <div class="content">
-                    now()，获取当前时间戳，毫秒。
+                    now()，获取当前时间戳，毫秒。</br>
                     示例：</br>
                     Gj.now();
                 </div>

@@ -27,7 +27,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.1.0"
+      version: "v1.1.0 beta"
     };
   },
   components: {Nav}
@@ -211,10 +211,10 @@ export default {
 }
  .introduce-text {
 	width: 7.20rem;
-	height: 2.00rem;
 	font-size:0.20rem;
 	margin: 1rem auto;
 	padding-top: 0.10rem;
+	padding-bottom: 0.20rem;
 	box-sizing: content-box;
 	border:0.01rem solid #ccc ;
 	box-shadow: 0.08rem 0.08rem 0.08rem #888; 
