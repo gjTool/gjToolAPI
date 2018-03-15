@@ -27,7 +27,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.0 测试版"
+      version: "v1.1.0"
     };
   },
   components: {Nav}

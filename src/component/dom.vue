@@ -6,6 +6,8 @@
             <li>after</li>
             <li>before</li>
             <li>remove</li>
+            <li>clone</li>
+            <li>appendTo</li>
         </ol>
         <ul class="content">
             <li>
@@ -48,7 +50,18 @@
                     remove()，删除元素。示例：Gj("#test").remove()，删除test。
                 </div>
             </li>
-
+            <li>
+                <h3 class="title">clone</h3>
+                <div class="content">
+                    clone()，克隆元素。示例：Gj("#test").clone()，克隆一个test元素的gjTool实例。
+                </div>
+            </li>
+            <li>
+                <h3 class="title">appendTo</h3>
+                <div class="content">
+                    appendTo()，将被选元素插入选择器元素的内部。示例：Gj("#test").appendTo("#tset1")，将test的插入tset1内部。
+                </div>
+            </li>
         </ul>
     </div>
 </template>
