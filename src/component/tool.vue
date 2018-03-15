@@ -163,7 +163,7 @@
             <li>
                 <h3 class="title">browser</h3>
                 <div class="content">
-                    browser 获取当前浏览器版本信息。browser是一个对象，可能包含的属性：opera，firefox，chrome，safari，webkit，ie</br>
+                    browser 获取当前浏览器版本信息。browser是一个对象，可能包含的属性：opera，firefox，chrome，safari，webkit，ie，pc，phone，tablet。</br>
                     示例：</br>
                     var browser = Gj.browser;</br>
                     console.log(browser.chrome);</br>
