@@ -8,22 +8,22 @@
             <li>
                 <h3 class="title">如何扩展插件方法</h3>
                 <div class="content">
-                    extend扩展插件。Gj.fn.protoType或者Gj.protoType上添加方法。</br>
+                    extend扩展插件。gjTool.fn.protoType或者gjTool.protoType上添加方法。</br>
                     示例：</br>
-                    Gj.protoType.alert = function(a){</br>
+                    gjTool.protoType.alert = function(a){</br>
                        &nbsp;&nbsp;&nbsp;&nbsp; alert(a);</br>
                     }</br>
-                    Gj.fn.protoType.alert = function(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;alert(Gj(this).val());</br>
+                    gjTool.fn.protoType.alert = function(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;alert(gjTool(this).val());</br>
                     }</br>
-                    Gj.extend({</br>
+                    gjTool.extend({</br>
                        &nbsp;&nbsp;&nbsp;&nbsp; alert: function(){</br>
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(a);</br>
                         }
                     })</br>
-                    Gj.fn.extend({</br>
+                    gjTool.fn.extend({</br>
                        &nbsp;&nbsp;&nbsp;&nbsp; alert : function(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Gj(this).val());</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(gjTool(this).val());</br>
                     }
                 </div>
             </li>
@@ -32,9 +32,9 @@
                 <div class="content">
                     drag()，拖拽元素。nodrag(true)、nodrag()，元素关闭拖拽。nodrag(false)，元素开启拖拽。</br>
                     示例：</br>
-                    Gj("#div").drag();//开启拖拽</br>
-                    Gj("#div").nodrag();//禁止拖拽</br>
-                    Gj("#div").nodrag(false);//允许拖拽</br>
+                    gjTool("#div").drag();//开启拖拽</br>
+                    gjTool("#div").nodrag();//禁止拖拽</br>
+                    gjTool("#div").nodrag(false);//允许拖拽</br>
                 </div>
             </li>
         </ul>

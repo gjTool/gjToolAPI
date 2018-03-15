@@ -29,14 +29,14 @@
                 <div class="content">
                     extend(obj)，扩展插件。</br>
                     示例：</br>
-                    Gj.extend({</br>
+                    gjTool.extend({</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;alert: function(){</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(a);</br>
                         }
                     })</br>
-                    Gj.fn.extend({</br>
+                    gjTool.fn.extend({</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;alert : function(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(Gj('input').val());</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(gjTool('input').val());</br>
                     }
                 </div>
             </li>
@@ -45,7 +45,7 @@
                 <div class="content">
                     each(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。</br>
                     示例：</br>
-                    Gj.each(arr, function(index, item){</br>
+                    gjTool.each(arr, function(index, item){</br>
                     &nbsp;&nbsp;&nbsp;&nbsp;//some code
                     );</br>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="content">
                     map(arr, fn)，遍历数组。fn有两个参数，index是下标索引，item是索引对应的值。有返回值，将fn里return出来的数据塞到新数组里返回。</br>
                     示例：</br>
-                    var newArr = Gj.each(arr, function(index, item){</br>
+                    var newArr = gjTool.each(arr, function(index, item){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;return index;</br>
                     );</br>
                 </div>
@@ -65,7 +65,7 @@
                 <div class="content">
                     now()，获取当前时间戳，毫秒。</br>
                     示例：</br>
-                    Gj.now();
+                    gjTool.now();
                 </div>
             </li>
             <li>
@@ -73,7 +73,7 @@
                 <div class="content">
                     getTime()，获取当前时间的年月日星期时分秒对象合集。</br>
                     示例：</br>
-                    var obj = Gj.getTime();</br>
+                    var obj = gjTool.getTime();</br>
                     obj.y 年</br>
                     obj.m 月</br>
                     obj.d 日</br>
@@ -88,11 +88,11 @@
                 <div class="content">
                     getDate(w)，获取一个当前时间年月日星期。</br>
                     示例：</br>
-                    var date = Gj.getDate();</br>
+                    var date = gjTool.getDate();</br>
                     console.log(date);//2018年02月14日星期三 10:28</br>
-                    var date = Gj.getDate("-");</br>
+                    var date = gjTool.getDate("-");</br>
                     console.log(date);//2018-02-14 10:28</br>
-                    var date = Gj.getDate();</br>
+                    var date = gjTool.getDate();</br>
                     console.log(date);//2018/02/14 10:28
                 </div>
             </li>
@@ -105,7 +105,7 @@
                     reverse：可选。布尔值，true代表降序排序</br>
                     示例：</br>
                     var arr  = [{abc:123},{abc:345},{abc:111}];</br>
-                    var newArr = Gj.arrSort(arr,"abc");//[{abc:111},{abc:123},{abc:345}]
+                    var newArr = gjTool.arrSort(arr,"abc");//[{abc:111},{abc:123},{abc:345}]
                 </div>
             </li>
             <li>
@@ -115,7 +115,7 @@
                     arr：必需。数组，需要深度克隆的数组</br>
                     示例：</br>
                     var arr  = [{abc:123},{abc:345},{abc:111}];</br>
-                    var newArr = Gj.cloneArr(arr);//[{abc:123},{abc:345},{abc:111}]
+                    var newArr = gjTool.cloneArr(arr);//[{abc:123},{abc:345},{abc:111}]
                 </div>
             </li>
             <li>
@@ -125,7 +125,7 @@
                     obj：必需。对象，需要深度克隆的对象</br>
                     示例：</br>
                     var obj  = {abc:111}</br>
-                    var newObj = Gj.cloneObj(obj);//{abc:111}
+                    var newObj = gjTool.cloneObj(obj);//{abc:111}
                 </div>
             </li>
             <li>
@@ -138,7 +138,7 @@
                     示例：</br>
                     var arr1  = [{abc:123},{abc:345},{abc:111}];</br>
                     var arr2  = [{abc:123},{abc:666},{abc:111}];</br>
-                    var newArr = Gj.extendArr(arr1, arr2);//[{abc:123},{abc:345},{abc:111},{abc:666}]
+                    var newArr = gjTool.extendArr(arr1, arr2);//[{abc:123},{abc:345},{abc:111},{abc:666}]
                 </div>
             </li>
             <li>
@@ -148,7 +148,7 @@
                     arr：必需。数组，需要去重的数组</br>
                     示例：</br>
                     var arr  = [1,1,2,3];</br>
-                    var newArr = Gj.unique(arr);//[1,2,3];
+                    var newArr = gjTool.unique(arr);//[1,2,3];
                 </div>
             </li>
             <li>
@@ -157,7 +157,7 @@
                     objSort(obj) 对象按键名排序     升序。</br>
                     示例：</br>
                     var obj  ={ abc:123,ed:1,b:3}></a>};</br>
-                    var newArr = Gj.objSort(obj);//{ abc:123,b:3,ed:1};
+                    var newArr = gjTool.objSort(obj);//{ abc:123,b:3,ed:1};
                 </div>
             </li>
             <li>
@@ -165,7 +165,7 @@
                 <div class="content">
                     browser 获取当前浏览器版本信息。browser是一个对象，可能包含的属性：opera，firefox，chrome，safari，webkit，ie，pc，phone，tablet。</br>
                     示例：</br>
-                    var browser = Gj.browser;</br>
+                    var browser = gjTool.browser;</br>
                     console.log(browser.chrome);</br>
                     console.log(browser.webkit);
                 </div>
@@ -175,7 +175,7 @@
                 <div class="content">
                     encrpt(str)，对字符串进行简单加密。</br>
                     示例：</br>
-                    var newStr = Gj.encrpt("123");//%ez%fa%fl
+                    var newStr = gjTool.encrpt("123");//%ez%fa%fl
                 </div>
             </li>
             <li>
@@ -183,8 +183,8 @@
                 <div class="content">
                     decrpty(str)，对字符串进行简单加密。</br>
                     示例：</br>
-                    var newStr = Gj.encrpt("123");//%ez%fa%fl</br>
-                    var str = Gj.encrpt(newStr);//123
+                    var newStr = gjTool.encrpt("123");//%ez%fa%fl</br>
+                    var str = gjTool.encrpt(newStr);//123
                 </div>
             </li>
             <li>
@@ -195,7 +195,7 @@
                     value：必需。字符串，需要存储的cookie值</br>
                     hour：必需。数字，单位小时。需要存储多久时间</br>
                     示例：</br>
-                    Gj.setCookie("user", "123", 1);
+                    gjTool.setCookie("user", "123", 1);
                 </div>
             </li>
             <li>
@@ -204,7 +204,7 @@
                     getCookie(name)，按cookie名读取cookie值。</br>
                     name：必需。字符串，需要读取的cookie名</br>
                     示例：</br>
-                    Gj.getCookie("user");
+                    gjTool.getCookie("user");
                 </div>
             </li>
             <li>
@@ -213,7 +213,7 @@
                     delCookie(name)，按cookie名删除cookie。</br>
                     name：必需。字符串，需要删除的cookie名</br>
                     示例：</br>
-                    Gj.delCookie("user")
+                    gjTool.delCookie("user")
                 </div>
             </li>
             <li>
@@ -222,13 +222,13 @@
                     getVerify(length)，获取一定长度的随机数字字母。<br>
                     lenth: 必需。数字，获取随机数字字母的长度</br>
                     示例：</br>
-                    var str = Gj.getVerify(4); //fDcR
+                    var str = gjTool.getVerify(4); //fDcR
                 </div>
             </li>
             <li>
                 <h3 class="title">easing</h3>
                 <div class="content">
-                    easing，动画相关的运动曲线对象。可通过Gj.extend扩展。目前有属性：</br>
+                    easing，动画相关的运动曲线对象。可通过gjTool.extend扩展。目前有属性：</br>
                     linear: 匀速 </br>
                     easeIn: 加速</br>
                     easeOut: 减速</br>
@@ -239,20 +239,20 @@
                 <h3 class="title">判断变量类型</h3>
                 <div class="content">
                     判断各种变量类型：都需要传入一个需要判断的参数，返回布尔值，true/false。</br>
-                    Gj.isString(test): 判断是否是字符串</br>
-                    Gj.isUndefined(test):  判断是否是undefined</br>
-                    Gj.isNull(test):  判断是否是null</br>
-                    Gj.isNumber(test):  判断是否是数字</br>
-                    Gj.isBoolean(test):  判断是否是布尔值</br>
-                    Gj.isDate(test):  判断是否是时间</br>
-                    Gj.isObject(test):  判断是否是对象</br>
-                    Gj.isArray(test):  判断是否是数组</br>
-                    Gj.isFunction(test):  判断是否是函数</br>
-                    Gj.isRegExp(test):  判断是否是正则</br>
-                    Gj.isWindow(test):  判断是否是window对象</br>
-                    Gj.isHTMLDocument(test):  判断是否是document对象</br>
-                    Gj.isHTMLElement(test):  判断是否是dom元素</br>
-                    Gj.isJSON(test):  判断是否是json字符串</br>
+                    gjTool.isString(test): 判断是否是字符串</br>
+                    gjTool.isUndefined(test):  判断是否是undefined</br>
+                    gjTool.isNull(test):  判断是否是null</br>
+                    gjTool.isNumber(test):  判断是否是数字</br>
+                    gjTool.isBoolean(test):  判断是否是布尔值</br>
+                    gjTool.isDate(test):  判断是否是时间</br>
+                    gjTool.isObject(test):  判断是否是对象</br>
+                    gjTool.isArray(test):  判断是否是数组</br>
+                    gjTool.isFunction(test):  判断是否是函数</br>
+                    gjTool.isRegExp(test):  判断是否是正则</br>
+                    gjTool.isWindow(test):  判断是否是window对象</br>
+                    gjTool.isHTMLDocument(test):  判断是否是document对象</br>
+                    gjTool.isHTMLElement(test):  判断是否是dom元素</br>
+                    gjTool.isJSON(test):  判断是否是json字符串</br>
                 </div>
             </li>
         </ul>

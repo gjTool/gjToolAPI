@@ -22,7 +22,7 @@
                     success：可选。函数，请求成功之后执行，函数参数一是服务端返回的数据，二是XMLHttpRequest对象。</br>
                     error：可选。函数，请求错误之后执行。函数参数一是错误状态码，二是XMLHttpRequest对象。</br></br>
                     示例：</br>
-                    Gj.ajax({</br>
+                    gjTool.ajax({</br>
                     &nbsp;&nbsp;&nbsp;&nbsp;url:  'myplace.xml',</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;type: "get",</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;dataType: "xml",</br>
@@ -39,7 +39,7 @@
                     data：可选。对象，请求是发送给服务端的数据，默认为空。</br>
                     fn：可选。函数，请求之后执行。</br></br>
                     示例：</br>
-                    Gj.get('readme.txt',function(data){</br>
+                    gjTool.get('readme.txt',function(data){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</br>
                     });
                 </div>
@@ -52,7 +52,7 @@
                     data：可选。对象，请求是发送给服务端的数据，默认为空。</br>
                     fn：可选。函数，请求之后执行。</br></br>
                     示例：</br>
-                    Gj.post('readme.txt',function(data){</br>
+                    gjTool.post('readme.txt',function(data){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</br>
                     });
                 </div>
@@ -65,7 +65,7 @@
                     data：可选。对象，请求是发送给服务端的数据，默认为空。</br>
                     fn：可选。函数，请求之后执行。</br></br>
                     示例：</br>
-                    Gj.post('readme.json',function(data){</br>
+                    gjTool.post('readme.json',function(data){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</br>
                     });
                 </div>
@@ -78,7 +78,7 @@
                     data：可选。对象，请求是发送给服务端的数据，默认为空。</br>
                     fn：可选。函数，请求之后执行。</br></br>
                     示例：</br>
-                    Gj.getXML('readme.xml',function(data){</br>
+                    gjTool.getXML('readme.xml',function(data){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;console.log(data);</br>
                     });
                 </div>

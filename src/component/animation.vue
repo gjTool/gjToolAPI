@@ -21,7 +21,7 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").animate({</br>
+                    gjTool(".container").animate({</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;scrollTop: 0</br>
                     },1000,"easeIn");
                 </div>
@@ -34,8 +34,8 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").show(1000,"easeIn");</br>
-                    Gj(".container").show();
+                    gjTool(".container").show(1000,"easeIn");</br>
+                    gjTool(".container").show();
                 </div>
             </li>
             <li>
@@ -46,8 +46,8 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").hide(1000,"easeIn");</br>
-                    Gj(".container").hide();
+                    gjTool(".container").hide(1000,"easeIn");</br>
+                    gjTool(".container").hide();
                 </div>
             </li>
             <li>
@@ -58,8 +58,8 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").toggle(1000,"easeIn");</br>
-                    Gj(".container").toggle();
+                    gjTool(".container").toggle(1000,"easeIn");</br>
+                    gjTool(".container").toggle();
                 </div>
             </li>
             <li>
@@ -70,7 +70,7 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").fadeIn(1000);
+                    gjTool(".container").fadeIn(1000);
                 </div>
             </li>
             <li>
@@ -81,7 +81,7 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").fadeOut(1000);
+                    gjTool(".container").fadeOut(1000);
                 </div>
             </li>
             <li>
@@ -92,7 +92,7 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").fadeToggle(1000);
+                    gjTool(".container").fadeToggle(1000);
                 </div>
             </li>
             <li>
@@ -104,7 +104,7 @@
                     easing: 可选。字符串，linear, easeIn, easeOut, easeInOut规定动画效果的运动曲线，默认easeInOut。</br>
                     callback: 可选。回调函数，规定动画完成后的执行函数。</br>
                     示例：</br>
-                    Gj(".container").fadeTo(0.3);
+                    gjTool(".container").fadeTo(0.3);
                 </div>
             </li>
             <li>
@@ -114,7 +114,7 @@
                     stopAll: 可选。true，停止元素动画队列所有动画。为空的时候，停止元素动画队列当前动画，其它继续</br>
                     goToEnd: 可选。true，stopAll为true的时候才可设置。让元素动画队列当前动画完成，其它停止<</br>
                     示例：</br>
-                    Gj(".container").stop(true);
+                    gjTool(".container").stop(true);
                 </div>
             </li>
         </ul>

@@ -66,9 +66,9 @@
 	<div class="content">
 		parent(selctor)，传入选择器字符串。获取元素父节点的实例</br>
 		示例：</br>
-		Gj('.test').parent();//返回test的父节点元素gjTool实例。</br>
+		gjTool('.test').parent();//返回test的父节点元素gjTool实例。</br>
 		示例：</br>
-		Gj('.test').parent('.nav');//返回test的元素className是nav的父节点gjTool示例
+		gjTool('.test').parent('.nav');//返回test的元素className是nav的父节点gjTool示例
 	</div>
 </li>
 <li>
@@ -76,9 +76,9 @@
 	<div class="content">
 		parents(selctor)，传入选择器字符串。获取元素所有父节点的实例</br>
 		示例：</br>
-		Gj('.test').parents();//返回test的所有父节点元素gjTool实例。</br>
+		gjTool('.test').parents();//返回test的所有父节点元素gjTool实例。</br>
 		示例：</br>
-		Gj('.test').parents('.nav');//返回test的元素className是nav的所有父节点gjTool示例
+		gjTool('.test').parents('.nav');//返回test的元素className是nav的所有父节点gjTool示例
 	</div>
 </li>
 <li>
@@ -86,9 +86,9 @@
 	<div class="content">
 		children(selctor)，传入选择器字符串。获取子节点元素实例</br>
 		示例：</br>
-		Gj('.test').children();//返回test的子节点gjTool实例。</br>
+		gjTool('.test').children();//返回test的子节点gjTool实例。</br>
 		示例：</br>
-		Gj('.test').children('.nav');//返回test的元素className是nav的子节点gjTool示例
+		gjTool('.test').children('.nav');//返回test的元素className是nav的子节点gjTool示例
 	</div>
 </li>
 <li>
@@ -96,9 +96,9 @@
 	<div class="content">
 		siblings(selctor)，传入选择器字符串。获取兄弟节点元素实例</br>
 		示例：</br>
-		Gj('.test').siblings();//返回test的兄弟节点gjTool实例。</br>
+		gjTool('.test').siblings();//返回test的兄弟节点gjTool实例。</br>
 		示例：</br>
-		Gj('.test').siblings('.nav');//返回test的元素className是nav的兄弟节点gjTool示例
+		gjTool('.test').siblings('.nav');//返回test的元素className是nav的兄弟节点gjTool示例
 	</div>
 </li>
 <li>
@@ -106,7 +106,7 @@
 	<div class="content">
 		prev()。获取前一个节点元素实例</br>
 		示例：</br>
-		Gj('.test').prev();//返回前一个节点gjTool示例
+		gjTool('.test').prev();//返回前一个节点gjTool示例
 	</div>
 </li>
 <li>
@@ -114,7 +114,7 @@
 	<div class="content">
 		next()。获取下一个节点元素实例</br>
 		示例：</br>
-		Gj('.test').next();//返回下一个节点gjTool示例
+		gjTool('.test').next();//返回下一个节点gjTool示例
 	</div>
 </li>
 <li>
@@ -122,7 +122,7 @@
 	<div class="content">
 		first()。获取实例元素数组第一个节点元素实例</br>
 		示例：</br>
-		Gj('.test').first();//返回test的第一个节点gjTool示例
+		gjTool('.test').first();//返回test的第一个节点gjTool示例
 	</div>
 </li>
 <li>
@@ -130,7 +130,7 @@
 	<div class="content">
 		last()。获取实例元素数组最后一个节点元素实例</br>
 		示例：</br>
-		Gj('.test').last();//返回test的最后一个节点gjTool示例
+		gjTool('.test').last();//返回test的最后一个节点gjTool示例
 	</div>
 </li>
 
