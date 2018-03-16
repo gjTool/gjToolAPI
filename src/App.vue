@@ -27,7 +27,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.1.0 beta"
+      version: "v1.1.3 beta"
     };
   },
   components: {Nav}
