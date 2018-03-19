@@ -27,7 +27,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.1.5 beta"
+      version: "v1.1.6 beta"
     };
   },
   components: {Nav}
@@ -39,7 +39,7 @@ export default {
 <style>
 @import url(common/style.css);
 pre {
-  padding: 10px 10px 0px 0px ;
+  padding: 0.1rem 0.1rem 0rem 0.2rem ;
   background:  #f0f0f0;
   font-size: 0.14rem;
 	font-family: Monaco, Consolas, "Lucida Console", monospace;

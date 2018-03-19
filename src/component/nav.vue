@@ -36,12 +36,13 @@
         <li class="type" data-id="tool">
           <router-link to="/tool">常用工具</router-link>
         </li>
-        <li class="type" data-id="plugin">
-          <router-link to="/plugin">插件</router-link>
-        </li>
         <li class="type" data-id="touch">
-          <router-link to="/touch">Touch</router-link>
+          <router-link to="/touch">TOUCH</router-link>
         </li>
+        <li class="type" data-id="plugin">
+          <router-link to="/plugin">插件扩展</router-link>
+        </li>
+        
     </ul>
 </template>
 <script>
