@@ -6,31 +6,37 @@
             <li>off</li>
             <li>hover</li>
             <li>其他事件</li>
+            <li>trigger</li>
         </ol>
         <ul class="content">
             <li>
                 <h3 class="title">文档加载完成</h3>
                 <div class="content">
-                    gjTool(function(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
-                    });</br>
-                    gjTool(document).ready(fucntion(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
-                    });</br>
-                    两种方式都是文档加载完成。在function内部写代码，就是代表文档加载完成后执行代码。
+                    $(function(){})、$(document).ready(fucntion(){ });两种方式都是文档加载完成。在function内部写代码，就是代表文档加载完成后执行代码。
+                    <pre>
+                    gjTool(function(){
+                        //some code
+                    });
+                    gjTool(document).ready(fucntion(){
+                        //some code
+                    });
+                    </pre>
                 </div>
             </li>
             <li>
                 <h3 class="title">on</h3>
                 <div class="content">
-                    on(eventType, selector, fn)，on事件绑定，给元素绑定事件。</br>
+                    on(eventType, selector, fn)，on事件绑定，给元素绑定事件。以及绑定自定义事件，但是需要trigger来触发。</br>
                     eventType：必需。字符串，事件名。</br>
                     selector: 可选。字符串，选择器名，代表事件监听的元素，有这个参数代表开启事件监听。</br>
                     fn: 必需。函数，在内部写代码表示事件执行要做什么，fn有可选参数，经过封装的event事件对象，兼容ie浏览器。</br>
                     示例：</br>
-                    gjTool("#div").on("click",function(e){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
+                    <pre>
+                    gjTool("#div").on("click",function(e){
+                        //some code
                     });
+                    </pre>
+                    
                 </div>
             </li>
             <li>
@@ -65,6 +71,14 @@
                     gjTool("#div").click(function(){</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;//some code</br>
                     });
+                </div>
+            </li>
+            <li>
+                <h3 class="title">trigger</h3>
+                <div class="content">
+                    trigger触发自定义事件。</br>
+                    示例：</br>
+                    
                 </div>
             </li>
         </ul>

@@ -14,6 +14,7 @@ import ajax from  './component/ajax.vue';
 import queue from  './component/queue.vue';
 import tool from  './component/tool.vue';
 import plugin from  './component/plugin.vue';
+import touch from  './component/touch.vue';
 
 Vue.use(VueRouter)
 
@@ -32,7 +33,8 @@ const router =  new VueRouter({
         { path: '/ajax', component: ajax },
         { path: '/queue', component: queue },
         { path: '/tool', component: tool },
-        { path: '/plugin', component: plugin }
+        { path: '/plugin', component: plugin },
+        { path: '/touch', component: touch }
     ]
 })
 export default router;

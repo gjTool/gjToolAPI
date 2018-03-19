@@ -39,6 +39,9 @@
         <li class="type" data-id="plugin">
           <router-link to="/plugin">插件</router-link>
         </li>
+        <li class="type" data-id="touch">
+          <router-link to="/touch">Touch</router-link>
+        </li>
     </ul>
 </template>
 <script>
@@ -47,41 +50,12 @@ export default {
 }
 </script>
 <style>
- .nav {
-  width: 100%;
-  height: auto;
-   box-shadow: 8px 8px 8px #888; 
-  -webkit-box-shadow: 8px 8px 8px #888; 
-  -ms-box-shadow: 8px 8px 8px #888;  
-  -o-box-shadow: 8px 8px 8px #888;  
-  -moz-box-shadow: 8px 8px 8px #888; 
-}
- .nav .type {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 190%;
-  padding-bottom: 5px; 
-  cursor: pointer;
-  text-indent: 30px;
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  text-shadow: 
-1px 1px 0 #ccc, 
-2px 2px 0 #ccc, /* end of 2 level deep grey shadow */ 
-3px 3px 0 #444, 
-4px 4px 0 #444, 
-5px 5px 0 #444, 
-6px 6px 0 #444; /* end of 4 level deep dark shadow */ 
-}
-
  .nav .type a {
    display: block;
    width: 100%;
    height: 100%;
    color: #000;
+   padding-bottom: 0.05rem; 
  }
   .nav .type a:hover {
   color: #3879d9;

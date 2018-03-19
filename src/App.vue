@@ -27,7 +27,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.1.3 beta"
+      version: "v1.1.5 beta"
     };
   },
   components: {Nav}
@@ -38,6 +38,19 @@ export default {
 
 <style>
 @import url(common/style.css);
+pre {
+  padding: 10px 10px 0px 0px ;
+  background:  #f0f0f0;
+  font-size: 0.14rem;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+  border-left:2px solid olivedrab;
+}
+.introduce-text pre {
+  width: 85%;
+  margin: 0 auto;
+  background: #f5f5f5;
+  border-left:none;
+}
 #app {
   width: 100%;
   height: 100%;
@@ -122,8 +135,7 @@ export default {
 .bar-left .nav .type {
   font-weight: 600;
   font-size: 0.18rem;
-  line-height: 190%;
-  padding-bottom: 0.05rem; 
+  line-height: 170%;
   cursor: pointer;
   text-indent: 0.30rem;
   user-select: none;
