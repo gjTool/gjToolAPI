@@ -4,6 +4,10 @@
         <p>使用方式：</p><br />
         <pre>
 // CommonJS 或者 AMD
+//首先安装gjtool
+npm install gjtool
+
+//然后引用
 import gjTool from "gjtool";  //var gjTool = require("gjtool");
 
 //html页面引入
