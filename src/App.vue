@@ -44,6 +44,7 @@ pre {
   font-size: 0.14rem;
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
   border-left:2px solid olivedrab;
+  white-space: pre-wrap;
 }
 .introduce-text pre {
   width: 85%;
@@ -135,7 +136,7 @@ pre {
 .bar-left .nav .type {
   font-weight: 600;
   font-size: 0.18rem;
-  line-height: 170%;
+  line-height: 0.4rem;
   cursor: pointer;
   text-indent: 0.30rem;
   user-select: none;
@@ -224,9 +225,13 @@ pre {
  .introduce-text {
 	width: 7.20rem;
 	font-size:0.20rem;
-	margin: 1rem auto;
 	padding-top: 0.10rem;
 	padding-bottom: 0.20rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -3.10rem;
+  margin-top: -3.10rem;
 	box-sizing: content-box;
 	border:0.01rem solid #ccc ;
 	box-shadow: 0.08rem 0.08rem 0.08rem #888; 

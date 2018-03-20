@@ -38,13 +38,18 @@ new Vue({
 		
     const _this = this;
     var size = 1;
+    var count = 0;
     var recalc = function () {
       var docEl = document.documentElement || document.body;
       var clientWidth = docEl.clientWidth;
 
-      if (!clientWidth || clientWidth<=1000) return;
+      if (count !==0 && (!clientWidth || clientWidth<=1000 )) return;
+      if(clientWidth<=1000){
+        clientWidth==1000
+      }
       docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
       size = clientWidth / 1920;
+      count++;
     };
     recalc();
     Gj(window).resize(recalc);
