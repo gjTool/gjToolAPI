@@ -19,7 +19,7 @@
           <router-link to="/attr">属性操作</router-link>
         </li>
         <li class="type" data-id="dom">
-         <router-link to="/dom">DOM操作</router-link>
+         <router-link to="/dom">DOM</router-link>
         </li>
         <li class="type" data-id="animation">
           <router-link to="/animation">动画</router-link>
