@@ -45,7 +45,7 @@ new Vue({
 
       if (count !==0 && (!clientWidth || clientWidth<=1000 )) return;
       if(clientWidth<=1000){
-        clientWidth==1000
+        clientWidth==1920
       }
       docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
       size = clientWidth / 1920;

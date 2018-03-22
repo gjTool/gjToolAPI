@@ -61,6 +61,7 @@ pre {
 .header {
   width: 100%;
   height: 0.94rem;
+  min-height: 50px;
   text-align: center;
   background-color: #262727;
 }
@@ -100,7 +101,7 @@ pre {
   color: #fff;
   position: absolute;
   bottom: 0.10rem;
-  right: -3.80rem;
+  right: -3.90rem;
   font-style: oblique;
 }
 .header .qq {
@@ -121,6 +122,7 @@ pre {
 
 .bar-left {
   width: 1.40rem;
+  min-width: 90px;
   height: 100%;
   float: left;
 }
@@ -229,9 +231,8 @@ pre {
 	padding-bottom: 0.20rem;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 10%;
   margin-left: -3.10rem;
-  margin-top: -3.10rem;
 	box-sizing: content-box;
 	border:0.01rem solid #ccc ;
 	box-shadow: 0.08rem 0.08rem 0.08rem #888; 
