@@ -43,10 +43,10 @@ new Vue({
       var docEl = document.documentElement || document.body;
       var clientWidth = docEl.clientWidth;
 
-      if (count !==0 && (!clientWidth || clientWidth<=1000 )) return;
-      if(clientWidth<=1000){
-        clientWidth==1920
-      }
+      if (count !==0 && (!clientWidth )) return;
+      // if(clientWidth<=1000){
+      //   clientWidth==1920
+      // }
       docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
       size = clientWidth / 1920;
       count++;

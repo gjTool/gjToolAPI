@@ -101,7 +101,7 @@ pre {
   color: #fff;
   position: absolute;
   bottom: 0.10rem;
-  right: -3.90rem;
+  right: -4.10rem;
   font-style: oblique;
 }
 .header .qq {
@@ -122,7 +122,7 @@ pre {
 
 .bar-left {
   width: 1.40rem;
-  min-width: 90px;
+  min-width: 70px;
   height: 100%;
   float: left;
 }
