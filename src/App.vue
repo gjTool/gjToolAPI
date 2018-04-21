@@ -8,8 +8,8 @@
         <a class="qq" href="tencent://message/?uin=861366490&Site=gjToolAPI&Menu=yes"  target="_self">反馈建议</a>
       </div>
       <div class="text">gjTool 一个轻量级javascript类库</div>
-      <a class="download" href="../download/gjtool.js" target="_blank">gjtool.js v1.2.1 下载</a>
-      <a class="download2" href="../download/gjtool.min.js" target="_blank">gjtool.min.js v1.2.1 下载</a>
+      <a class="download" href="../gjtool/dist/gjtool.js" target="_blank">gjtool.js v1.2.1 下载</a>
+      <a class="download2" href="../gjtool/dist/gjtool.min.js" target="_blank">gjtool.min.js v1.2.1 下载</a>
     </div>
     <div class="main clearfix">
       <div class="bar-left">
