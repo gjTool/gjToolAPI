@@ -8,13 +8,15 @@
 npm install gjtool
 
 //然后引用
-import gjTool from "gjtool";  //var gjTool = require("gjtool");
+import gjTool from "gjtool";  
+//var gjTool = require("gjtool");
 
 //html页面引入
 &lt;script  src="gjtool.js">&lt;/script> 
 
 //使用方式，例如：
-gjTool('#test').show(); //$('#test').hide();
+gjTool('#test').show(); 
+//$('#test').hide();
         </pre>
         
     </div>

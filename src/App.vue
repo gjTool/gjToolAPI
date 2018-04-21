@@ -4,10 +4,12 @@
       <div class="title">
         <p>gjTool API</p>
         <a class="version" href="https://github.com/gjTool/gjTool"  target="_blank">{{version}}</a>
-         <a class="gjtool" href="http://gjtool.cn"  target="_blank">gjtool.cn</a>
+         <a class="gjtool" href="http://www.gjtool.cn"  target="_blank">www.gjtool.cn</a>
         <a class="qq" href="tencent://message/?uin=861366490&Site=gjToolAPI&Menu=yes"  target="_self">反馈建议</a>
       </div>
       <div class="text">gjTool 一个轻量级javascript类库</div>
+      <a class="download" href="../download/gjtool.js" target="_blank">gjtool.js v1.1.8 下载</a>
+      <a class="download2" href="../download/gjtool.min.js" target="_blank">gjtool.min.js v1.1.8 下载</a>
     </div>
     <div class="main clearfix">
       <div class="bar-left">
@@ -27,7 +29,7 @@ export default {
   name: "app",
   data() {
     return {
-      version: "v1.1.6 beta"
+      version: "v1.1.8 beta"
     };
   },
   components: {Nav}
@@ -64,6 +66,7 @@ pre {
   min-height: 50px;
   text-align: center;
   background-color: #262727;
+  position: relative;
 }
 .header .text {
   position: absolute;
@@ -80,6 +83,22 @@ pre {
   display: inline-block;
   position: relative;
 }
+.header .download {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  left:3rem;
+  bottom: 4px;
+  text-decoration: underline;
+}
+.header .download2 {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  left:5.2rem;
+  bottom: 4px;
+  text-decoration: underline;
+}
 .header p {
   display: inline-block;
   color: #fff;
@@ -92,17 +111,19 @@ pre {
   font-size: 0.12rem;
   color: #fff;
   position: absolute;
-  bottom: 0.16rem;
+  bottom: 0.12rem;
   right: -0.38rem;
   font-style: oblique;
+  text-decoration: underline;
 }
 .header .gjtool {
   font-size: 0.16rem;
   color: #fff;
   position: absolute;
-  bottom: 0.10rem;
-  right: -4.10rem;
+  bottom: 0.14rem;
+  right: -4.30rem;
   font-style: oblique;
+  text-decoration: underline;
 }
 .header .qq {
   font-size: 0.14rem;
@@ -111,8 +132,8 @@ pre {
   color: #000;
   position: absolute;
   bottom: 0.10rem;
-  right: -2.80rem;
-  background-size: 0.20rem 0.20rem;
+  right: -2.60rem;
+  background-size: 16px 16px;
 }
 .main {
   width: 100%;

@@ -8,20 +8,25 @@
             <li>touchend</li>
             <li>touchcancel</li>
             <li>tap</li>
-            <li>longTap</li>
-            <li>doubleTap</li>
+            <li>press</li>
+            <li>doubletap</li>
             <li>swipe</li>
-            <li>swipeLeft</li>
-            <li>swipeRight</li>
-            <li>swipeUp</li>
-            <li>swipeDown</li>
+            <li>swipeleft</li>
+            <li>swiperight</li>
+            <li>swipeup</li>
+            <li>swipedown</li>
+            <li>pinch</li>
+            <li>pinchin</li>
+            <li>pinchout</li>
+            <li>pinchstart</li>
+            <li>pinchend</li>
         </ol>
         <ul class="content">
           <li>
                 <h3 class="title">touch</h3>
                 <div class="content">
                    touch绑定事件。touch 类似 on。on可以绑定所有事件以及自定义事件，touch只能绑定触摸事件。<br />
-                   例如："touchstart touchmove touchend touchcancel  tap longTap doubleTap swipe swipeLeft swipeRight swipeUp swipeDown"<br /><br />
+                   例如："touchstart touchmove touchend touchcancel  tap press doubletap swipe swipeleft swiperight swipeup swipedown pinch pinchin pinchout pinchstart pinchend"<br /><br />
                     示例：<br />
                     <pre>
 gjTool('.box').touch( 'tap', function(e){
@@ -102,24 +107,24 @@ gjTool('.box').on( 'tap', function(e){
                 </div>
             </li>
             <li>
-                <h3 class="title">longTap</h3>
+                <h3 class="title">press</h3>
                 <div class="content">
-                    longTap，长按事件<br /><br />
+                    press，长按事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'longTap', function(e){
+gjTool('.box').on( 'press', function(e){
     console.log(e.type);
 });
                     </pre>
                 </div>
             </li>
             <li>
-                <h3 class="title">doubleTap</h3>
+                <h3 class="title">doubletap</h3>
                 <div class="content">
-                    doubleTap，双击事件<br /><br />
+                    doubletap，双击事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'doubleTap', function(e){
+gjTool('.box').on( 'doubletap', function(e){
     console.log(e.type);
 });
                     </pre>
@@ -138,54 +143,125 @@ gjTool('.box').on( 'swipe', function(e){
                 </div>
             </li>
             <li>
-                <h3 class="title">swipeLeft</h3>
+                <h3 class="title">swipeleft</h3>
                 <div class="content">
-                    swipeLeft，屏幕上向左滑事件<br /><br />
+                    swipeleft，屏幕上向左滑事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'swipeLeft', function(e){
+gjTool('.box').on( 'swipeleft', function(e){
     console.log(e.type);
 });
                     </pre>
                 </div>
             </li>
             <li>
-                <h3 class="title">swipeRight</h3>
+                <h3 class="title">swiperight</h3>
                 <div class="content">
-                     swipeRight，屏幕上向右滑事件<br /><br />
+                     swiperight，屏幕上向右滑事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'swipeRight', function(e){
+gjTool('.box').on( 'swiperight', function(e){
     console.log(e.type);
 });
                     </pre>
                 </div>
             </li>
             <li>
-                <h3 class="title">swipeUp</h3>
+                <h3 class="title">swipeup</h3>
                 <div class="content">
-                   swipeUp，屏幕上向上滑事件<br /><br />
+                   swipeup，屏幕上向上滑事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'swipeUp', function(e){
+gjTool('.box').on( 'swipeup', function(e){
     console.log(e.type);
 });
                     </pre>
                 </div>
             </li>
             <li>
-                <h3 class="title">swipeDown</h3>
+                <h3 class="title">swipedown</h3>
                 <div class="content">
-                    swipeDown，屏幕上向下滑事件<br /><br />
+                    swipedown，屏幕上向下滑事件<br /><br />
                     示例：<br />
                     <pre>
-gjTool('.box').on( 'swipeDown', function(e){
+gjTool('.box').on( 'swipedown', function(e){
     console.log(e.type);
 });
                     </pre>
                 </div>
             </li>
-            
+            <li>
+                <h3 class="title">pinch</h3>
+                <div class="content">
+                    pinch，捏合手势事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinch', function(e){
+    console.log(e.scale);
+});
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <h3 class="title">pinch</h3>
+                <div class="content">
+                    pinch，捏合手势事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinch', function(e){
+    console.log(e.scale);
+});
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <h3 class="title">pinchin</h3>
+                <div class="content">
+                    pinchin，捏合手势缩小事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinchin', function(e){
+    console.log(e.scale);
+});
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <h3 class="title">pinchout</h3>
+                <div class="content">
+                    pinchout，捏合手势放大事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinchout', function(e){
+    console.log(e.scale);
+});
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <h3 class="title">pinchstart</h3>
+                <div class="content">
+                    pinchstart，捏合手势开始事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinchstart', function(e){
+    console.log(e.type);
+});
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <h3 class="title">pinchend</h3>
+                <div class="content">
+                    pinchend，捏合手势结束事件<br /><br />
+                    示例：<br />
+                    <pre>
+gjTool('.box').on( 'pinchend', function(e){
+    console.log(e.type);
+});
+                    </pre>
+                </div>
+            </li>
         </ul>
     </div>
 </template>

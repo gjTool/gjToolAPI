@@ -18,9 +18,12 @@
                     cache：可选。布尔值，是否缓存，true开启缓存/false不缓存。默认true<br />
                     dataType：可选。字符串，请求返回的数据类型，text/json/xml，默认text。如果参数写成jsonp，代表jsonp跨域请求<br />
                     data：可选。对象，请求是发送给服务端的数据，默认为空。<br />
+                    timeout：可选。数字毫秒，请求超时的时间，默认为10000毫秒。<br />
+                    mimeType：可选。字符串，设置请求的数资源类型，默认为空。<br />
                     beforeSend：可选。函数，请求发送之前执行。<br />
                     success：可选。函数，请求成功之后执行，函数参数一是：服务端返回的数据，二是：XMLHttpRequest对象。<br />
-                    error：可选。函数，请求错误之后执行。函数参数一是：错误状态码，二是：XMLHttpRequest对象。<br /><br />
+                    error：可选。函数，请求错误之后执行。函数参数一是：错误状态，二是：XMLHttpRequest对象。<br />
+                    complete：可选。函数，请求完毕之后执行，函数参数一是：服务端返回的数据，二是：XMLHttpRequest对象，三是请求的状态。<br /><br />
                     示例：<br />
                     <pre>
 gjTool.ajax({
